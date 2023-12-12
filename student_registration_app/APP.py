@@ -381,14 +381,14 @@ tk.Button(root,
 
 db = mysql.connector.connect(host='127.0.0.1',
                              user='root',
-                             password='ioenimil',)
+                             password='password',)
 
 first_cursor = db.cursor()
 first_cursor.execute('CREATE DATABASE IF NOT EXISTS SANKOFA;')
 
 db = mysql.connector.connect(host='127.0.0.1',
                              user='root',
-                             password='ioenimil',
+                             password='password',
                              database='SANKOFA')
 
 def checkTableExists(dbcon, tablename):
